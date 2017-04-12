@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.example.elliothannahiii.kotd.WeatherAddKicksActivity">
+
+    <RelativeLayout
+        android:id="@+id/weather_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/tv_wtype"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:text="Weather Type"
+            android:textAllCaps="true"
+            android:textSize="30sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:gravity="center"
+            android:textAlignment="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black"
+            android:layout_alignParentBottom="true"
+            />
+
+        <ImageButton
+            android:id="@+id/weather_home"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="12dp"
+            android:src="@mipmap/kotd_home_icon"
+            android:scaleType="fitCenter"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/kotd_logo"
+            android:scaleType="fitCenter"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_weather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What type of weather would you wear these shoes in?"
+        android:textColor="@android:color/holo_blue_dark"
+        android:gravity="center_horizontal"
+        android:textSize="40sp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/weather_title_bar"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout"
+        android:layout_below="@+id/tv_weather"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp">
+
+        <CheckBox
+            android:id="@+id/cb_sunny"
+            android:buttonTint="@android:color/holo_blue_dark"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:gravity="left|center_vertical"
+            android:text="Sunny"
+            android:textSize="20sp"
+            android:layout_below="@+id/tv_weather"
+            android:layout_centerHorizontal="true" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+        <CheckBox
+            android:id="@+id/cb_rain"
+            android:buttonTint="@android:color/holo_blue_dark"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:textSize="20sp"
+            android:text="Rain"
+            android:layout_marginLeft="130dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+        <CheckBox
+            android:id="@+id/cb_snow"
+            android:buttonTint="@android:color/holo_blue_dark"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:textSize="20sp"
+            android:text="Snow"
+            android:layout_marginLeft="130dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+        <CheckBox
+            android:id="@+id/cb_hot"
+            android:buttonTint="@android:color/holo_blue_dark"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:textSize="20sp"
+            android:text="Hot"
+            android:layout_marginLeft="130dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+        <CheckBox
+            android:id="@+id/cb_cold"
+            android:buttonTint="@android:color/holo_blue_dark"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:textSize="20sp"
+            android:text="Cold"
+            android:layout_marginLeft="130dp"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/nxt_weather"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="Next"
+        />
+
+</RelativeLayout>

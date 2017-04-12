@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.example.elliothannahiii.kotd.ShoeNameActivity">
+
+    <RelativeLayout
+        android:id="@+id/shoename_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/title_shoe_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:text="Shoe Name"
+            android:textAllCaps="true"
+            android:textSize="30sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:gravity="center"
+            android:textAlignment="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black"
+            android:layout_alignParentBottom="true"
+            />
+
+        <ImageButton
+            android:id="@+id/sn_home"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="12dp"
+            android:src="@mipmap/kotd_home_icon"
+            android:scaleType="fitCenter"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/kotd_logo"
+            android:scaleType="fitCenter"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_shoe_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What is the name of the shoe?"
+        android:textColor="@android:color/holo_blue_dark"
+        android:gravity="center_horizontal"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="40sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/shoename_title_bar"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/et_shoe_name"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_below="@id/tv_shoe_name"
+        android:inputType="text"
+        android:textSize="30dp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/black"
+        />
+
+    <Button
+        android:id="@+id/nxt_shoe_name"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="Next"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="For example, enter the name and color on the shoe box. "
+        android:layout_below="@id/et_shoe_name"
+        android:layout_margin="35dp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:id="@+id/textView7" />
+
+
+</RelativeLayout>

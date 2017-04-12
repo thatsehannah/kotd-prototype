@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.example.elliothannahiii.kotd.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/main_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/kotd_logo"
+            android:scaleType="fitCenter"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome, Elliot"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_below="@+id/main_title_bar"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:id="@+id/pick_shoe"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:src="@mipmap/kotd_sneaker_icon"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
+        android:layout_centerInParent="true"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Pick a shoe for today..."
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:layout_marginBottom="79dp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:fontFamily="casual"
+        android:layout_above="@+id/tool_bar"
+        android:layout_alignParentStart="true" />
+
+
+    <LinearLayout
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white">
+
+        <ImageButton
+            android:id="@+id/add_kicks"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/addkicks"
+            android:layout_margin="6dp"
+            />
+
+        <ImageButton
+            android:id="@+id/main_mycloset"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/kotd_user_shoes_icon" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

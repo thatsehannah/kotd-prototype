@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_dark"
+    tools:context="com.example.elliothannahiii.kotd.BarcodeOrManualActivity">
+
+    <RelativeLayout
+        android:id="@+id/weather_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:text="New shoe"
+            android:textAllCaps="true"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="30sp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black"
+            android:layout_alignParentBottom="true"
+            />
+
+        <ImageButton
+            android:id="@+id/newShoeHome"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="12dp"
+            android:src="@mipmap/kotd_home_icon"
+            android:scaleType="fitCenter"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/kotd_logo"
+            android:scaleType="fitCenter"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_centerHorizontal="true" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Shoes By:"
+        android:textColor="@android:color/white"
+        android:textSize="30dp"
+        android:fontFamily="casual"
+        android:layout_above="@+id/barcodeButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp" />
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/barcodeButton"
+        android:background="@drawable/background_white"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20dp"
+        android:src="@mipmap/kotd_barcode"
+        android:scaleType="fitCenter"/>
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/background_white"
+        android:layout_alignTop="@+id/barcodeButton"
+        android:layout_alignParentEnd="true"
+        android:src="@mipmap/kotd_manual"
+        android:id="@+id/manualButton"
+        android:scaleType="fitCenter"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Barcode"
+        android:textColor="@android:color/white"
+        android:fontFamily="casual"
+        android:layout_below="@+id/barcodeButton"
+        android:layout_alignStart="@+id/barcodeButton"
+        android:layout_marginStart="25dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Manual Entry"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        android:layout_marginEnd="25dp"
+        android:fontFamily="casual"
+        android:layout_below="@+id/manualButton"
+        android:layout_alignEnd="@+id/manualButton" />
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:backgroundTintMode="src_in"
+    tools:context="com.example.elliothannahiii.kotd.MyKicksActivity">
+
+    <RelativeLayout
+        android:id="@+id/your_kicks_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@android:color/white">
+
+        <ImageButton
+            android:id="@+id/my_kicks_home"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="12dp"
+            android:src="@mipmap/kotd_home_icon"
+            android:scaleType="fitCenter"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:textAlignment="center"
+            android:text="Your Kicks"
+            android:textAllCaps="true"
+            android:textSize="30sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black"
+            android:layout_alignParentBottom="true"
+            />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/kotd_logo"
+            android:scaleType="fitCenter"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/your_kicks_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/your_kicks_title_bar"
+        android:layout_above="@+id/delete_all"
+        android:visibility="gone">
+    </ListView>
+
+    <TextView
+        android:id="@+id/noshoesadded"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="NO SHOES ADDED"
+        android:textColor="@android:color/darker_gray"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:visibility="visible"/>
+
+    <Button
+        android:id="@+id/delete_all"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="Delete All"
+        />
+
+    </RelativeLayout>

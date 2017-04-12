@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_dark"
+    tools:context="com.example.elliothannahiii.kotd.YourShoeForToday">
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="This Is Your Kick For Today"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="30dp"
+        android:layout_marginTop="192dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView6" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/kotd_pointdown"
+        android:layout_below="@+id/textView6"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/hand" />
+
+    <TextView
+        android:id="@+id/showname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIKE! You Have No Shoes To Wear In This Type of Weather Bro!"
+        android:textSize="15dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textAllCaps="true"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/hand"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/gohome"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="62dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/white"
+        android:text="Go Home"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="20dp"/>
+
+    <ImageButton
+        android:id="@+id/twitter"
+        android:background="@mipmap/kotd_twitter"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="45dp"
+        android:visibility="visible"
+        android:layout_below="@+id/showname"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+    <ImageButton
+        android:id="@+id/instagram"
+        android:background="@mipmap/kotd_instagram"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:visibility="visible"
+        android:layout_alignTop="@+id/twitter"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:id="@+id/facebook"
+        android:background="@mipmap/kotd_facebook"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="44dp"
+        android:visibility="visible"
+        android:layout_alignTop="@+id/instagram"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>
